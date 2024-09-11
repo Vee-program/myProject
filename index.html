@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mental Health Check Survey</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="title">Mental Health Check Survey</h1>
+ <p id="description"><em>Thank you for taking the time to complete the survey.</em></p>
+ <form  id="survey-form" autocomplete="on">
+ <fieldset class="frame">
+ <label></label>
+ <div class="myForm">
+ <label for="name" id="name-label">Full name:</label><br/>
+ <input id="name" type="text" name="full-name" placeholder="Enter your full name" required></label><br/>
+ </div>
+ <div class="myForm">
+<label for="email" id="email-label">Email:</label><br/>
+<input id="email" name="email" type="email" placeholder="Enter your email"required></label><br/>
+</div>
+<div class="myForm">
+<label for="number" id="number-label">Age:</label><br/>
+<input id="number" type="number" name="number" min="15" max="65" placeholder="Enter your age" required></label><br/>
+</div>
+<label for="rate">How would you rate your your overall mental well-being currently?</label><br/>
+<select name="rate" id="rate">
+  <option disabled selected>Select your rate</option>
+  <option value="excellent">Excellent</option>
+  <option value="good">Good</option>
+  <option value="average">Average</option>
+  <option value="poor">Poor</option>
+  <option value="very poor">Very poor</option>
+  </select>
+<p id="sources">What are your primary sources of sress in your current life?</p>
+<div class="primary-sources">
+<label><input checked type="checkbox" id="work-school" value="work-school">Work or school-related stress </label><br/>
+<label><input checked type="checkbox" id="relationtips" value="relationtips">Relationship or family issues </label><br/>
+<label><input checked type="checkbox" id="financial-stress" value="financial-stress">Financial stress </label><br/>
+<label><input checked type="checkbox" id="other" value="other">Other:</label><br/>
+</div>
+<p>Have you been diagnosed with any mental health disorders,such as anxiety or depression?</p>
+<p id="select-option1" class="myP1"></p>
+<div class="primary-sources">
+<label><input type="radio" id="option-yes1" name="yes-no" value="yes-no">Yes </label><br/>
+<label><input type="radio" id="option-no1" name="yes-no" value="yes-no">No </label><br/>
+<label><input type="radio" id="option-none1" name="yes-no" value="yes-no">Prefer not to say </label><br/>
+</div>
+<p>Do you feel supported by your family and friends regarding your mental health?</p>
+<p id="select-option2" class="myP2" ></p>
+<div class="primary-sources">
+<label><input type="radio" id="option-yes2" name="no-yes" value="no-yes">Yes</label><br/>
+<label><input type="radio" id="option-yes2" name="no-yes" value="no-yes">No</label><br/>
+<label><input type="radio" id="option-none2" name="no-yes" value="no-yes">Prefer not to say</label><br/>
+</div>
+<p>What kind of mental health support would you like to receive?</p>
+<div class="primary-sources">
+<label><input checked type="checkbox" id="info" value="info">Information on self care practices</label><br/>
+<label><input checked type="checkbox" id="tips" value="tips">Tips on coping with mental health</label><br/>
+<label><input checked type="checkbox" id="one-on-one" value="one-on-one"> One on one counselling</label><br/>
+<label><input checked type="checkbox" id="circles" value="circles">Sharing circles</label><br/>
+<label><input checked type="checkbox" id="other-option" value="other">Other</label><br/>
+</div>
+  <p>Anything else you would like to share?</p>
+  <div class="myText">
+  <label for="comment"><textarea id="comment" type="text" name="comment" placeholder="Enter your comment here..." rows="9" cols="80"></textarea></label><br/>
+  <input type="submit" value="Submit" class="submit" id="submit">
+  </div>
+</fieldset>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
